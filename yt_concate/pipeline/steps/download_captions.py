@@ -27,7 +27,7 @@ class DownloadCaptions(Step):
                 continue
 
             # save the caption to a file named Output.txt
-            text_file = open(utils.caption_filepath(url), "w", encoding='utf-8')
+            text_file = open(yt.caption_filepath, "w", encoding='utf-8')
             text_file.write(en_caption_convert_to_srt)
             text_file.close()
 
