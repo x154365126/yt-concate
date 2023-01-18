@@ -1,5 +1,8 @@
+from .log import config_logger
 from .step import Step
 
 class Postflight(Step):
     def process(self, data, inputs, utils):
-        print('in Postflight')
+        logging = config_logger()
+        logging.info('in Postflight')
+        # print('in Postflight')
